@@ -1,0 +1,10 @@
+google-generativeai
+chromadb
+matplotlib
+seaborn
+langchain_google_genai
+langchain-chroma
+langchain_community
+pypdf
+FAISS
+langchain_text_splitters
