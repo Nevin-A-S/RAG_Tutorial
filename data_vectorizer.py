@@ -5,7 +5,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 
 DATA_PATH = r"Data"
-CHROMA_PATH = r"faiss_index"
+FAISS_PATH = r"faiss_index"
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -35,4 +35,4 @@ vector_store = FAISS.from_documents(
     embedding=embeddings_model,
 )
 
-vector_store.save_local(CHROMA_PATH)
+vector_store.save_local(FAISS_PATH)
